@@ -1,0 +1,21 @@
+<div class="person {{ official?.party?.toLowerCase() }}">
+	<h3>{{ official.name }}</h3>
+	<ng-container *ngIf="official.address">
+		<address *ngFor="let address of official.address">
+			{{ address.line1 }}<br>
+			<ng-container *ngIf="address.line2">{{ address.line2 }}<br></ng-container>
+			{{ address.city }}, {{ address.state }} {{ address.zip }}
+		</address>
+	</ng-container>
+	<p *ngFor="let phone of official.phones">
+		<a href="tel:{{ phone }}"><img src="/assets/icons/phone.svg"> {{ phone }}</a>
+	</p>
+	<p>
+		<a *ngFor="let email of official.emails" href="mailto:{{ email }}"><img src="/assets/icons/email.svg"></a>
+	</p>
+	<p>
+		<ng-container *ngFor="let social of official.channels">
+			<social [type]="social.type" [id]="social.id"></social>
+		</ng-container>
+	</p>
+</div>

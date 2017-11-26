@@ -1,0 +1,24 @@
+<div class="container">
+	<h1 class="text-center">Where do you live?</h1>
+	<form (ngSubmit)="search()">
+		<div class="input-group input-group-lg">
+			<input type="text" name="search" class="form-control" placeholder="Address" [(ngModel)]="address">
+			<span class="input-group-btn">
+		        <button class="btn btn-secondary" type="submit">Go!</button>
+	      </span>
+		</div>
+	</form>
+
+	<div *ngIf="result">
+		<div class="divisions">
+			<ng-container *ngFor="let division of divisions">
+				<division [name]="division.name" [officials]="division.officeIndices">
+					<office-list [offices]="offices[division.id]" [officials]="result.officials"></office-list>
+				</division>
+			</ng-container>
+		</div>
+	</div>
+</div>
+<footer>
+	<p>Icons designed by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from Flaticon</p>
+</footer>

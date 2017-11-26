@@ -1,0 +1,25 @@
+<ng-container [ngSwitch]="type">
+	<ng-container *ngSwitchCase="'GooglePlus'">
+		<a href="https://plus.google.com/{{ id }}" target="_blank">
+			<img src="/assets/icons/google-plus-logo.svg">
+		</a>
+	</ng-container>
+	<ng-container *ngSwitchCase="'Facebook'">
+		<a href="https://www.facebook.com/{{ id }}" target="_blank">
+			<img src="/assets/icons/facebook-logo.svg">
+		</a>
+	</ng-container>
+	<ng-container *ngSwitchCase="'Twitter'">
+		<a href="https://twitter.com/{{ id }}" target="_blank">
+			<img src="/assets/icons/twitter-logo.svg">
+		</a>
+	</ng-container>
+	<ng-container *ngSwitchCase="'YouTube'">
+		<a href="https://www.youtube.com/channel/{{ id }}" target="_blank">
+			<img src="/assets/icons/youtube-logo.svg">
+		</a>
+	</ng-container>
+	<ng-container *ngSwitchDefault>
+		<p>{{ type }}<br>{{ id }}</p>
+	</ng-container>
+</ng-container>

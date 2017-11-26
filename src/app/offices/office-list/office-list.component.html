@@ -1,0 +1,8 @@
+<ng-container *ngFor="let office of offices">
+	<h3>{{ office.name }}</h3>
+	<div class="officials">
+		<div *ngFor="let index of office.officialIndices" class="official">
+			<official [official]="officials[index]"></official>
+		</div>
+	</div>
+</ng-container>

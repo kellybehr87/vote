@@ -1,0 +1,35 @@
+/*.person {
+	margin: 15px;
+	padding: 20px;
+	border: 2px solid rgb(39, 40, 49);
+	border-radius: 4px;
+	background-color: rgba(39, 40, 49, 0.1);
+}
+
+.democratic {
+	border-color: rgb(13, 104, 125);
+	background-color: rgba(13, 104, 125, 0.1);
+}
+
+.republican {
+	border-color: rgb(166, 81, 54);
+	background-color: rgba(166, 81, 54, 0.1);
+}*/
+
+.person {
+	background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 30px;
+}
+
+.republican {
+	background-image: url('/assets/icons/republican-party.svg');
+}
+
+.democratic {
+	background-image: url('/assets/icons/democratic-party.svg');
+}
+
+:host >>> img {
+	height: 25px;
+}
