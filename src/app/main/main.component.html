@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" [class.preload]="!result">
 	<h1 class="text-center">Where do you live?</h1>
 	<form (ngSubmit)="search()">
 		<div class="input-group input-group-lg">
@@ -19,6 +19,3 @@
 		</div>
 	</div>
 </div>
-<footer>
-	<p>Icons designed by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from Flaticon</p>
-</footer>

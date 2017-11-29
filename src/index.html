@@ -11,6 +11,24 @@
   <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
 </head>
 <body>
-  <app-root></app-root>
+	<div class="app">
+	  <app-root></app-root>
+	</div>
+	<footer>
+		<p>Icons designed by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from Flaticon</p>
+	</footer>
+	<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBXn0mSc-oYG98m7a538lYNGQfx5UjIgcQ",
+	    authDomain: "help-me-vote.firebaseapp.com",
+	    databaseURL: "https://help-me-vote.firebaseio.com",
+	    projectId: "help-me-vote",
+	    storageBucket: "help-me-vote.appspot.com",
+	    messagingSenderId: "422061513135"
+	  };
+	  firebase.initializeApp(config);
+	</script>
 </body>
 </html>

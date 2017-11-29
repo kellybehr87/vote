@@ -1,13 +1,47 @@
 h3 {
     font-weight: 200;
     background-color: rgb(17, 162, 186);
-    margin: 0 -20px 20px;
+    margin: 0 -20px;
     padding: 10px 20px;
     color: white;
 }
 
 .officials {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 30px;
+	margin: 0 -20px;
+}
+
+.official {
+	padding: 20px;
+}
+
+.official:nth-child(even) {
+	background: rgba(245, 241, 213, 0.4);
+}
+
+@media (min-width: 768px) {
+	.officials {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.official,
+	.official:nth-child(even) {
+		background: #ffffff;
+	}
+
+	.official:nth-child(4n+2) {
+		background: rgba(245, 241, 213, 0.4);
+	}
+
+	.official:nth-child(4n+3) {
+		background: rgba(245, 241, 213, 0.4);
+	}
+}
+
+@media (min-width: 992px) {
+	.officials {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }

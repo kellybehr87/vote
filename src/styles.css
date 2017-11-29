@@ -1,11 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+html, 
 body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
 	color: rgb(39, 40, 49);
     background: 
 	    repeating-linear-gradient(45deg, rgba(255,255,255, 0) 0px, rgba(255,255,255, 0) 2px, rgb(255,255,255) 2px, rgb(255,255,255) 4px),
 	    repeating-linear-gradient(-45deg, rgba(39, 40, 49, 0.05) 0px, rgba(39, 40, 49, 0.05) 1px, rgba(255,255,255, 0) 2px, rgba(255,255,255, 0) 16px),
 	    repeating-linear-gradient(-45deg, rgba(255,255,255, 0) 0px, rgba(255,255,255, 0) 2px, rgb(255,255,255) 2px, rgb(255,255,255) 4px),
 	    repeating-linear-gradient(45deg, rgba(39, 40, 49, 0.05) 0px, rgba(39, 40, 49, 0.05) 2px, rgba(255,255,255, 0) 2px, rgba(255,255,255, 0) 16px);
+}
+
+.app {
+	flex: 1 0 auto;
 }
 
 h2 {
@@ -15,4 +26,21 @@ h2 {
 
 a:hover {
 	text-decoration: none;
+}
+
+input:-webkit-autofill, 
+textarea:-webkit-autofill, 
+select:-webkit-autofill {
+	background: #ffffff !important;
+}
+
+footer {
+	background: rgb(166, 81, 54);
+	text-align: center;
+	color: #ffffff;
+	bottom: 0;
+}
+
+footer a {
+	color: #ffffff;
 }

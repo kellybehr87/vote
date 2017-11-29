@@ -1,0 +1,39 @@
+.btn-secondary {
+	background-color: rgb(13, 104, 125);
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+form,
+h1,
+input,
+button {
+	transition: all 1s;
+}
+
+form {
+	padding: 0;
+}
+
+h1 {
+	margin: 0 0 .5rem;
+}
+
+input, button {
+	font-size: 11px;
+}
+
+.preload form {
+	padding: 0 100px;
+}
+
+.preload h1 {
+	margin: 100px 0 50px;
+}
+
+.preload input,
+.preload button {
+	font-size: 32px;
+}
